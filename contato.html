@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>    
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/Style.css">
+        <title>Snow Freak</title>
+        <link rel="website icon"  type="png" href="images/boneco-de-neve.png">
+    </head>
+    <body class="bodyContato">
+        <div class="container-fluid">
+            <header>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="images/The little house, hand drawn home illustration with garden (3).png">
+                    </div>
+                    <div class="col-4">
+                        <p class="pp">Snow Freak</p>
+                    </div>
+                    <div class="col-4">
+                        <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sul.html">Conheça o sul</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Reserva</a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <br>
+
+            <div class="row"><!--APARTIR DAQUI COMEÇA O FORMULARIO -->
+                <div class="col-12">
+                    <div class="container" id="container">
+                        <div class="title" style="color: #ddd9ce;">Reserva</div>
+                        <div class="content" id="content" style="color:#ddd9ce;">
+                            <form action="dadoU">
+                                <div class="user-details">
+                                    <div class="input-box">
+                                        <span class="dadoc">N° Hospedes</span>
+                                        <input type="text" placeholder="Digite o Numero de Hospedes..." required id="qtdeHospede">
+                                    </div>
+                                    <div class="input-box">
+                                        <span class="dadoC">N° de Diarias</span>
+                                        <input type="text" placeholder="Digite à Diaria..." required id="qtdeDiaria">
+                                    </div>
+                                    <span class="dadoc">Escolha à Suíte</span>
+                                    <select name="select" id="slcSuite">
+                                        <option value="0">Escolha...</option>
+                                        <option value="1">Suite de casal</option>
+                                        <option value="2">Suite Moderna</option>
+                                        <option value="3">Suite para solteiros</option>
+                                        <option value="4">Suite Simples</option>
+                                    </select>
+                                </div>
+                          </form>
+                          <form id="dadoR" name="form">
+                                <div class="gender-details">
+                                    <input type="radio" name="rdEntrega" id="dot-1">
+                                    <input type="radio" name="rdEntrega" id="dot-2">
+                                    <input type="radio" name="rdEntrega" id="dot-3">
+                                    <span class="tituloRefeicao">Refeição</span>
+                                    <div class="category" id="seila">
+                                        <label for="dot-1">
+                                            <span class="dot one"></span>
+                                            <span class="gender" ></span>
+                                            <input type="radio" id="rdEntrega" name="rdEntrega" value="1">Café da Manhã
+                                        </label>
+                                        <label for="dot-2">
+                                            <span class="dot two"></span>
+                                            <span class="gender"></span>
+                                        </label>
+                                        <input type="radio" id="rdEntrega" name="rdEntrega" value="2">Meia pensão
+                                        <label for="dot-3">
+                                            <span class="dot three"></span>
+                                            <span class="gender"></span>
+                                            <input type="radio" id="rdEntrega" name="rdEntrega" value="3">Pensão Completa
+                                        </label>
+                                    </div>
+                                    <span class="tituloRefeicao">Serviço Adicional</span>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <input type="checkbox" id="translado" name="embalagem"> Translado
+                                        </div>
+                                        <div class="col-4">
+                                            <input type="checkbox" id="tuor" name="cartao"> City Tour
+                                        </div>
+                                        <div class="col-4">
+                                            <input type="checkbox" id="passeio" name="cartao"> Passeio
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="button">
+                                    <input type="button" value="Calcular" onclick="compra()">
+                                </div>
+                            </form>
+                            <div class="title">Orçamento</div>
+                            <div id="nomeProduto" class="resultado"></div>
+                            <div id="valorUnitario" class="resultado"></div>
+                            <div id="adicionais" class="resultado"></div>
+                            <div id="diaria" class="resultado"></div>
+                            <div id="comida1" class="resultado"></div>
+                            <div id="valorTotal" class="resultado"></div>
+                            <h1> </h1><!--Só para dar espaço-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    
+                </div>
+            </div>
+            <!--rodapé-->
+            <footer class="footerContato"> <!--tem um código doido aqui-->
+                <div class="row">
+                  <div class="col-12">
+                      <p>
+                        Rua das Flores, 124 - centro -São João do Paraíso
+                         <br> 
+                        
+                         E-mail:Vini.va338@gmail.com
+                        <br>
+                
+                        E-mail:gabinete878@gmail.com 
+                      </p>
+                  </div>
+                </div>
+            </footer>  
+        </div> <!--Essa div fecha o container-->
+        <script src="js/contato.js"></script>
+    </body>
+</html>
